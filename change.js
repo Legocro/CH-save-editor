@@ -1,5 +1,5 @@
 function change() {
-    var check = document.getElementById("slide").checked;
+    var check = document.getElementById("mode").checked;
     if (check == true) {
         document.getElementById("indiv").style.opacity = 0;
         document.getElementById("outdiv").style.opacity = 1;       		

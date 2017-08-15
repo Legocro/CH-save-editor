@@ -1,20 +1,57 @@
-.xyl{
+body {
+  background-color: #e0dede;
+}
+
+input[type=checkbox] {
+  border: none;
+  outline: none;
+  background-color: #e0dede; 
+}
+
+button {
+
+  padding: 5px;
+  height: 40px;
+  width: 160px;
+  outline: none;
+  border: 1.2px solid #000;
+  border-radius: 12px;
+  background-color: #999999;
+  transition: background-color 0.7s;
+}
+
+button:hover {
+  border:1.2px solid #a33535;
+  background-color: #e0dede;
+  cursor: pointer;
+  /*color: #fff;*/
+}
+
+button:active {
+  background-color: blue;
+}
+.xyl {
   position: relative
   left: 100px;
 }
-.kappa{
+.kappa {
   width: 80px;
   height: 80px;
+  transition: content 1s;
 }
-.savetext{
+.savetext {
   height: 500px;
   position: relative;
-  bottom: 450px;
   resize: none;
+}
+
+#yeah {
+  position: relative;
+  top: 35px;
+  left: 20px;
 }
 .output{
   position: relative;
-  bottom: 450px;
   height: 500px;
   width: 800px;
   }
@@ -27,13 +64,13 @@ input {
   border-left: none;
   border-top: none;
   border-right: none;
-  /*border-bottom: 2px solid #000000;*/
-  background-color: #005778;
+  border-bottom: 2px solid #000;
+  background-color: #e0dede;
 
 }
 
 input:focus {
-  border-bottom: 2px solid #00f6ff;
+  border-bottom: 2px solid #a33535;
   background-color: #fff;
 }
 
@@ -46,16 +83,18 @@ input:focus {
 }
 
 #indiv {
-  transition: opacity 1s ease-in;
+  transition: opacity 0.8s ease-in;
 }
 #outdiv{
-  transition: opacity 1s ease-in;
+  position: relative;
+  bottom: 410px;
+  transition: opacity 0.8s ease-in;
 }
 
 .savegame .output {
-  transition: opacity 1s ease-in;
-  transition: width 1s ease-in;
-  transition: height 1s ease-in;
+  transition: opacity 0.8s ease-in;
+  transition: width 0.8s ease-in;
+  transition: height 0.8s ease-in;
 }
 
 

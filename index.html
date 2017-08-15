@@ -5,8 +5,8 @@
       <title>Clicker Heroes save editor</title>
       <link rel="icon" href="https://abload.de/img/moeru5qpd8.png" type="image/png">
       <link rel="stylesheet" type="text/css" href="style.css">
-      <link rel="stylesheet" type="text/css" href="buttons.css">
-      <link rel="stylesheet" type="text/css" href="checkbox.css">
+      <link rel="stylesheet" type="text/css" href="check.css">
+      <link rel="stylesheet" type="text/css" href="textarea.css">
       <script type="text/javascript" src="https://cdn.rawgit.com/nodeca/pako/7abdb13e/dist/pako.min.js"></script>
       <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/md5.js"></script>
@@ -20,28 +20,19 @@
 
    </head>
    <body>
-   	  <div id="container">
-      <h2 class="pretty">
-         Only for testing purposes <img class="kappa" src="https://i.imgur.com/Hawb3it.png">
+      <h2>
+         Only for testing purposes <img  id="kappa" class="kappa" src="https://i.imgur.com/Hawb3it.png">
       </h2>
-      <div class="slide">	
-		<input type="checkbox" value="None" id="slide" name="check" />
-		<label for="slide"></label>
+      <div>
+      	 <!--p id="yeah">Decoded save mode</p-->
+	  	 <div id="checkboxyo">
+	  	 	<input type="checkbox" id="mode">
+  			<label for="mode">Decoded save mode</label>
+	  	 </div>
 	  </div>
-	  Switch to decoded save mode
       <div id="indiv">
-         <div>
-            <textarea class="pretty" id="input" onfocus="this.select()"></textarea>
-            	<div id="button-container">
-					<div id="button" class="blue">
-						<div id="order">
-							<div id="order-line"></div>
-							<div id="order-line"></div>
-						</div>
-						<p>Decode</p>
-					</div>
-				</div>
-         </div>
+         <textarea style="overflow: hidden;" id="input" onfocus="this.select()"></textarea><br>
+   		 <button class="input-button" id="read">Decode</button>
          <div><input required="" type="text" class="" id="xyl"><label alt='Xyl' placeholder='Xyl'></label>Xyl</div>
          <div><input required="" type="text" class="" id="chor"><label alt='Xyl' placeholder='Xyl'></label>Chor</div>
          <div><input required="" type="text" class="" id="phan"><label alt='Xyl' placeholder='Xyl'></label>Phan</div>
@@ -51,22 +42,13 @@
          <div><input required="" type="text" class="" id="heroS"><label alt='Xyl' placeholder='Xyl'></label>Hero Souls</div>
          <div><input required="" type="text" class="" id="gold"><label alt='Xyl' placeholder='Xyl'></label>Gold</div>
          <div><input required="" type="text" class="" id="ruby"><label alt='Xyl' placeholder='Xyl'></label>Rubies</div>
-         <div id="button-container">
-         	<div id="button" class="green">
-         		<div id="order">
-         			<div id="order-line"></div>
-         			<div id="order-line"></div>
-         		</div>
-         		<p>Encode</p>
-         	</div>
-         </div>
-         <div><textarea class="" id="output" onfocus="this.select()"></textarea></div>
+         <button class="output-button" id="out">Encode</button><br><br>
+         <div><textarea style="overflow: hidden;"class="" id="output" onfocus="this.select()"></textarea></div>
       </div>
       <div id="outdiv" style="opacity: 0; visibility: hidden">
          <textarea class="savetext" placeholder="Save Game" id="rawsg" onfocus="this.select()"></textarea>
          <textarea class="output" placeholder="Decoded Data" id="decoded"></textarea>
       </div>
       <input class="" type="checkbox" id="clan" style="visibility: hidden">
-      </div>
    </body>
 </html>

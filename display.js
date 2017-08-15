@@ -21,9 +21,9 @@ function displayValues(data) {
 
 function kappa(){
     let link;
-    link = redkappa ? "https://i.imgur.com/4bFjcVL.png" : "https://i.imgur.com/Hawb3it.png"
+    link = redkappa ? "https://i.imgur.com/4bFjcVL.png" : "https://i.imgur.com/Hawb3it.png";
     redkappa = !redkappa;
-    $(".kappa").attr("src" , link)
+    $(".kappa").attr("src" , link);
 }
 
 function removeBorb() {
