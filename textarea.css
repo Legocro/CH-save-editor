@@ -20,6 +20,6 @@ textarea {
 
 
 textarea:focus {
-    background: none repeat scroll 0 0 #FFFFFF;
+    background: none repeat scroll 0 0 #F0EAD6;
     outline-width: 0;
 }
