@@ -1,5 +1,5 @@
 var xyl, chor, phan, borb, pony, moeru, souls, rubies , redkappa , old ;
-redkappa = true;
+redkappa = false;
 
 function onReadSave() {
     let data = $("#input").val();
