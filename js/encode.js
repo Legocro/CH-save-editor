@@ -37,14 +37,14 @@ function encodeOld(data) {
 	delete data.type;
 	data.account = {
 		flag: true,
-		name: "Clicker Heroes save editor™",
+		name: "Clicker Heroes save editor",
 		author: {
 			discord: "Legofury#9425",
 			reddit: "/u/Legocro",
 			github: "/Legocro"
 		},
 		note: "This is added by integration and cannot be removed",
-		license: "There's no license what did you think"
+		license: "There is no license what did you think"
 	};
 	data = JSON.stringify(data);
     let letters = "0123456789abcdefghijklmnopqrstuvwxyz"
@@ -64,7 +64,7 @@ function encodeNew(data) {
 	delete data.type
 	data.account = {
 		flag: true,
-		name: "Clicker Heroes save editor™",
+		name: "Clicker Heroes save editor",
 		author: {
 			discord: "Legofury#9425",
 			reddit: "/u/Legocro",
