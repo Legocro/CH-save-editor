@@ -45,14 +45,14 @@ function setOldValues(data) {
 
 
 function setNewValues(data) {
-    /*let currentRubies = $("#ruby").val();
-    let currentPhan = parseFloat($("#phan").val());
-    let currentChor = parseFloat($("#chor").val());
-    let currentXyl = parseFloat($("#xyl").val());
+    let currentRubies = $("#ruby").val();
+    //let currentPhan = parseFloat($("#phan").val());
+    //let currentChor = parseFloat($("#chor").val());
+    //let currentXyl = parseFloat($("#xyl").val());
     //let currentBorb = parseFloat($("#borb").val());
-    let currentPony = parseFloat($("#pony").val())
+    //let currentPony = parseFloat($("#pony").val())
     let currentMoeru = $("#moeru").val();
-    data.outsiders.outsiders[1].level = currentXyl;
+    /*data.outsiders.outsiders[1].level = currentXyl;
     data.outsiders.outsiders[2].level = currentChor;
     data.outsiders.outsiders[3].level = currentPhan;
     data.outsiders.outsiders[5].level = currentPony;
