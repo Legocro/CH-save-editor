@@ -1,3 +1,5 @@
+//One day I'll comment all of my code, but today is not that day
+
 function getHash(string) {
     let salt = 'af0ik392jrmt0nsfdghy0'
     let charaters = string.split();
