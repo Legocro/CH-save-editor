@@ -1,4 +1,5 @@
 function displayValues(data) {
+    borb ? backToOldOutsiders() : fuckingNewBetaOutsiders();
     xyl = data.outsiders.outsiders[1].level;
     chor = data.outsiders.outsiders[2].level;
     phan = data.outsiders.outsiders[3].level;
@@ -8,15 +9,31 @@ function displayValues(data) {
     gold = data.gold;
     moeru = data.heroCollection.heroes[43].epicLevel;
     rubies = data.rubies;
-    $("#xyl").val(xyl)
-    $("#chor").val(chor)
-    $("#phan").val(phan)
-    $("#borb").val(borb)
-    $("#pony").val(pony)
-    $("#gold").val(gold)
-    $("#heroS").val(souls)
-    $("#moeru").val(moeru)
-    $("#ruby").val(rubies)
+    $("#xyl").val(xyl);
+    $("#chor").val(chor);
+    $("#phan").val(phan);
+    $("#borb").val(borb);
+    $("#pony").val(pony);
+    $("#gold").val(gold);
+    $("#heroS").val(souls);
+    $("#moeru").val(moeru);
+    $("#ruby").val(rubies);
+}
+
+function backToOldOutsiders() {
+    $("#xyl")[0].disabled = false;
+    $("#chor")[0].disabled = false;
+    $("#phan")[0].disabled = false;
+    $("#borb")[0].disabled = false;
+    $("#pony")[0].disabled = false;
+}
+
+function fuckingNewBetaOutsiders() {
+    $("#xyl")[0].disabled = true;
+    $("#chor")[0].disabled = true;
+    $("#phan")[0].disabled = true;
+    $("#borb")[0].disabled = true;
+    $("#pony")[0].disabled = true;
 }
 
 function kappa(){
