@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+	  <meta name="author" content="Legocro">
+      <meta name="description" content="Save editor for Clicker Heroes. Supports 1e10 and all prior save formats">
+      <meta name="keywords" content="Clicker Heroes, CH, edit, Savegame, Save, 1e10, 1e9, Hero Souls, Gold, Rubies, Primal">
+      <meta property="og:author" content="Legocro">
+      <meta property="og:description" content="Save editor for Clicker Heroes. Supports 1e10 and all prior save formats">
+      <meta property="og:image" content="https://abload.de/img/moeru5qpd8.png">
+      <meta property="og:image:type" content="image/png">
+      <meta property="og:image:width" content="1000">
+      <meta property="og:image:height" content="1000">
+      <meta property="og:site_name" content="Clicker Heroes - Save Editor">
+      <meta property="og:title" content="Save edit">
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="https://legocro.github.io/CH-save-editor/">
+	   
+      <title>Clicker Heroes save editor</title>
+       
+      <link rel="icon" href="https://abload.de/img/moeru5qpd8.png" type="image/png">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/check.css">
+      <link rel="stylesheet" type="text/css" href="css/textarea.css">
+	   
+	  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-104772074-1"></script>
+	  <script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+ 	    gtag('js', new Date());
+        gtag('config', 'UA-104772074-1');
+	  </script>
+
+      <script type="text/javascript" src="https://cdn.rawgit.com/nodeca/pako/7abdb13e/dist/pako.min.js"></script>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/md5.js"></script>
+      <script type="text/javascript" src="https://cdn.rawgit.com/nodeca/pako/7abdb13e/dist/pako.min.js"></script>      
+      <script type="text/javascript" src="js/script.js"></script>
+      <script type="text/javascript" src="js/change.js"></script>
+      <script type="text/javascript" src="js/events.js"></script>
+      <script type="text/javascript" src="js/encode.js"></script>
+      <script type="text/javascript" src="js/display.js"></script>
+	  <script type="text/javascript" src="js/setting.js"></script>
+   </head>
+   <body>
+      <h2>
+         Only for testing purposes <img  id="kappa" class="kappa" src="https://i.imgur.com/Hawb3it.png">
+      </h2>
+      <p id="credit">
+         <b>Author</b>    Reddit:<a href="https://reddit.com/u/legocro" target="_blank">/u/legocro</a> | Discord:Legofury#9425 | Github:<a href="https://Github.com/Legocro" target="_blank">Legocro</a>
+      </p>
+      <div>
+      	 <!--p id="yeah">Decoded save mode</p-->
+	  	 <div id="checkboxyo">
+	  	 	<input type="checkbox" id="mode">
+  			<label for="mode">Decoded save mode</label>
+	  	 </div>
+	  </div>
+      <div id="indiv">
+         <textarea style="overflow: hidden;" id="input" onfocus="this.select()"></textarea><br>
+   		 <button class="input-button" id="read">Decode</button>
+         <div><input required="" type="text" class="" id="xyl"><label alt='Xyl' placeholder='Xyl'></label>Xyl</div>
+         <div><input required="" type="text" class="" id="chor"><label alt='Xyl' placeholder='Xyl'></label>Chor</div>
+         <div><input required="" type="text" class="" id="phan"><label alt='Xyl' placeholder='Xyl'></label>Phan</div>
+         <div id="hail"><input required="" type="text" class="" id="borb"><label alt='Xyl' placeholder='Xyl'></label>Borb</div>
+         <div><input required="" type="text" class="" id="pony"><label alt='Xyl' placeholder='Xyl'></label>Pony</div>
+         <div><input required="" type="text" class="" id="moeru"><label alt='Xyl' placeholder='Xyl'></label>Moeru</div>
+         <div><input required="" type="text" class="" id="heroS"><label alt='Xyl' placeholder='Xyl'></label>Hero Souls</div>
+         <div><input required="" type="text" class="" id="gold"><label alt='Xyl' placeholder='Xyl'></label>Gold</div>
+         <div><input required="" type="text" class="" id="ruby"><label alt='Xyl' placeholder='Xyl'></label>Rubies</div>
+         <button class="output-button" id="out">Encode</button><br><br>
+         <div><textarea style="overflow: hidden;"class="" id="output" onfocus="this.select()"></textarea></div>
+      </div>
+      <div id="outdiv" style="opacity: 0; visibility: hidden">
+         <textarea class="savetext" placeholder="Save Game" id="rawsg" onfocus="this.select()"></textarea>
+         <textarea class="output" placeholder="Decoded Data" id="decoded"></textarea>
+      </div>
+      <input class="" type="checkbox" id="clan" style="visibility: hidden">
+   </body>
+</html>
