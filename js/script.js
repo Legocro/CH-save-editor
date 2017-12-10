@@ -1,5 +1,5 @@
-var xyl, chor, phan, borb, pony, moeru, souls, rubies , redkappa , old ;
-redkappa = false;
+var gold, aSouls, souls, rubies, red, totalAs, newAs;
+red = false;
 
 function onReadSave() {
     let data = $("#input").val();
@@ -15,6 +15,7 @@ function outputSave() {
 
 
 function altIn() {
+    console.log("Lol");
     let txt = $("#rawsg").val();
     $("#decoded").val((JSON.stringify(decode(txt))));
 }

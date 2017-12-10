@@ -1,5 +1,3 @@
-//One day I'll comment all of my code, but today is not that day
-
 function getHash(string) {
     let salt = 'af0ik392jrmt0nsfdghy0'
     let charaters = string.split();
@@ -23,7 +21,6 @@ function decodeOld(data) {
 
 function decodeNew(data) {
     old = false;
-    removeBorb();
 	let result = data.slice(32)
 	data = pako.inflate(atob(result), {to: 'string' });
 	data = JSON.parse(data);
@@ -34,7 +31,7 @@ function decodeNew(data) {
 }
 
 function encodeOld(data) {
-	data = redkappa ? wipe(data) : data;
+	data = red ? wipe(data) : data;
 	console.log(data)
 	delete data.type;
 	data.account = {
@@ -46,7 +43,7 @@ function encodeOld(data) {
 			github: "/Legocro"
 		},
 		note: "This is added by integration and cannot be removed",
-		license: "There is no license what did you think"
+		license: "There's no license what did you think"
 	};
 	data = JSON.stringify(data);
     let letters = "0123456789abcdefghijklmnopqrstuvwxyz"
@@ -61,12 +58,12 @@ function encodeOld(data) {
 }
 
 function encodeNew(data) {
-	data = redkappa ? wipe(data) : data;
+	data = red ? wipe(data) : data;
 	console.log(data);
 	delete data.type
 	data.account = {
 		flag: true,
-		name: "Clicker Heroes save editor",
+		name: "Clicker Heroes save editor™",
 		author: {
 			discord: "Legofury#9425",
 			reddit: "/u/Legocro",
