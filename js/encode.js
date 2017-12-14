@@ -8,6 +8,7 @@ function getHash(string) {
 
 function decodeOld(data) {
     old = true;
+    addBorb();
     let result = data.split("Fe12NAfA3R6z4k0z");
     let txt = "";
     for (var i = 0; i < result[0].length; i += 2)

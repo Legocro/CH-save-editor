@@ -6,5 +6,4 @@ window.onload = function(){
 	$("#decoded").on("change" , altOut);
 	$("#rawsg").on("change" , altIn);
 	$("#clans").on("dblclick" , clans);
-	warning();
 }

@@ -17,18 +17,10 @@ function outputSave() {
 function altIn() {
     console.log("Lol");
     let txt = $("#rawsg").val();
-    $("#decoded").val((JSON.stringify(decode(txt), null, 4)));
+    $("#decoded").val((JSON.stringify(decode(txt))));
 }
 
 function altOut() {
     let txt = $("#decoded").val();
     $("#rawsg").val(encode(txt));
 }
-
-function warning(){
-    if (!localStorage.seenWarning){
-        localStorage.seenWarning = true;
-        $("#warning").click();
-    }
-}
-
