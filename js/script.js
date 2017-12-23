@@ -9,6 +9,9 @@ function onReadSave() {
 function outputSave() {
     let txt = $("#input").val();
     let data = decode(txt);
+    if (invalidValues()){
+        return null;
+    }
     data = setValues(data);
     $("#output").val(encode(data));
 }
