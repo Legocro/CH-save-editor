@@ -42,6 +42,10 @@ function invalidValues() {
     return invalid;
 }
 
+function tabthing() {
+    
+}
+
 function removeWarning(id){
     let el = $(`#${id}Cont`);
     if (!el.hasClass("has-warning")) return;

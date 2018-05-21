@@ -23,7 +23,10 @@
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-104772074-1"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
 		gtag('js', new Date());
 		gtag('config', 'UA-104772074-1');
 	</script>
@@ -62,11 +65,12 @@
 					<h4 class="modal-title">Note</h4>
 				</div>
 				<div class="modal-body">
-					<p>Save editing tends to be risky and take the sense of accomplishment out of playing the game. Consider only using this for test purposes
-						or recovering lost saves.</p>
+					<p>Save editing tends to be risky and take the sense of accomplishment out of playing the game. Consider only using this
+						for test purposes or recovering lost saves.</p>
 				</div>
 				<div class="modal-footer warning">
 					<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal" onclick="$('#tutorialTab').trigger('click')">Tutorial</button>
 				</div>
 			</div>
 
@@ -82,6 +86,9 @@
 				</li>
 				<li>
 					<a data-toggle="tab" href="#decode">Decoded</a>
+				</li>
+				<li>
+					<a data-toggle="tab" href="#tutorial" id="tutorialTab">Tutorial</a>
 				</li>
 				<li>
 					<a data-toggle="tab" href="#about">About</a>
@@ -186,6 +193,10 @@
 							</thead>
 							<tbody>
 								<tr>
+									<td>21/05/2018</td>
+									<td>Added the tutorial.</td>
+								</tr>
+								<tr>
 									<td>23/12/2017</td>
 									<td>Added a warning label if some of the inputs are invalid.</td>
 								</tr>
@@ -208,6 +219,32 @@
 							</tbody>
 						</table>
 
+					</div>
+				</div>
+			</div>
+			<div id="tutorial" class="tab-pane fade">
+				<div class="row">
+					<div class="col-sm-8">
+						<p>Here's a quick tutorial on how to get your save file.</p>
+
+						<p>1. Press the spanner icon in the top right corner of the game.</p>
+						<img src="https://i.imgur.com/ZNVusvH.png">
+						<br>
+						<br>
+						<br>
+						<p>2. Press the 'Save' button.</p>
+						<img src="https://i.imgur.com/zlOAPsk.png">
+						<br>
+						<br>
+						<br>
+						<p>3. You should see confirmation text at the bottom of the window</p>
+						<img src="https://i.imgur.com/iRAF2fI.png">
+						<br>
+						<br>
+						<br>
+						<p>4. That's it, your save file is now copied to your system clipboard, all you need is to paste it into the save editor
+							now.</p>
+						<img src="https://i.imgur.com/vQ6PBvn.png">
 					</div>
 				</div>
 			</div>
