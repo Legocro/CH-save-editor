@@ -23,7 +23,9 @@ function decodeNew(data) {
 	let result = data.slice(32)
 	data = pako.inflate(atob(result), {to: 'string' });
 	data = JSON.parse(data);
+	data.ow = "b3ac65fafc8c87215bd5ea573a8c5c72";
 	data.type = "new"
+	let tag = "This code is written and owned by Marin Legović";
 	console.log(data);
 	return data;
 
