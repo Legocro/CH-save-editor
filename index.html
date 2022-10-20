@@ -3,11 +3,10 @@
 
 <head>
 	<!-- Random comment in the source code. Hail Borb! -->
-	<meta name="description" content="Save editor for Clicker Heroes. Supports 1e11 and all prior save formats">
-	<meta name="keywords" content="Clicker Heroes, CH, edit, Savegame, Save, 1e11, 1e10, 1e9, Hero Souls, Gold, Rubies, Primal">
+	<meta name="description" content="Save editor for Clicker Heroes (Unity)">
 	<meta name="viewport" content="width=device-width">
 	<meta property="og:author" content="Legocro">
-	<meta property="og:description" content="Save editor for Clicker Heroes. Supports 1e11 and all prior save formats">
+	<meta property="og:description" content="Save editor for Clicker Heroes (Unity)">
 	<meta property="og:image" content="https://abload.de/img/moeru5qpd8.png">
 	<meta property="og:image:type" content="image/png">
 	<meta property="og:image:width" content="1000">
@@ -15,21 +14,9 @@
 	<meta property="og:site_name" content="Clicker Heroes - Save Editor">
 	<meta property="og:title" content="Save edit">
 	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://legocro.github.io/CH-save-editor/">
 
 	<title>Clicker Heroes save editor</title>
 	<link rel="icon" href="https://abload.de/img/moeru5qpd8.png" type="image/png">
-
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-104772074-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag('js', new Date());
-		gtag('config', 'UA-104772074-1');
-	</script>
 
 	<link id="style" rel="stylesheet" href="https://bootswatch.com/3/superhero/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -38,7 +25,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="https://cdn.rawgit.com/MikeMcl/decimal.js/master/decimal.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/md5.js"></script>
-	<script type="text/javascript" src="https://cdn.rawgit.com/nodeca/pako/7abdb13e/dist/pako.min.js"></script>
+	<script type="text/javascript" src="pako.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript" src="js/change.js"></script>
 	<script type="text/javascript" src="js/events.js"></script>
@@ -65,12 +52,14 @@
 					<h4 class="modal-title">Note</h4>
 				</div>
 				<div class="modal-body">
-					<p>Save editing tends to be risky and take the sense of accomplishment out of playing the game. Consider only using this
+					<p>Save editing tends to be risky and take the sense of accomplishment out of playing the game.
+						Consider only using this
 						for test purposes or recovering lost saves.</p>
 				</div>
 				<div class="modal-footer warning">
 					<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-default" data-dismiss="modal" onclick="$('#tutorialTab').trigger('click')">Tutorial</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal"
+						onclick="$('#tutorialTab').trigger('click')">Tutorial</button>
 				</div>
 			</div>
 
@@ -138,7 +127,8 @@
 						<div class="panel panel-primary">
 							<div class="panel-heading">Output</div>
 							<div class="form-group panel-body">
-								<textarea class="form-control readonly" readonly rows="11" id="output" onfocus="this.select()"></textarea>
+								<textarea class="form-control readonly" readonly rows="11" id="output"
+									onfocus="this.select()"></textarea>
 								<button class="btn btn-primary btn-block" id="out">
 									<i aria-hidden="true" class="fa fa-angle-double-right"></i>Encode</button>
 							</div>
@@ -183,6 +173,9 @@
 							<a href="https://github.com/Legocro" target="_blank">
 								<i aria-hidden="true" class="fa fa-github"></i>/Legocro</a>
 						</p>
+						<p>Unity Fix:
+							<i class="fa fa-user-circle" aria-hidden="true"></i>Almond Juice#2719 &nbsp
+						</p>
 						<p>Changelog:</p>
 						<table class="table">
 							<thead>
@@ -192,6 +185,10 @@
 								</tr>
 							</thead>
 							<tbody>
+								<tr>
+									<td>16/9/2022</td>
+									<td>Fixed for Unity</td>
+								</tr>
 								<tr>
 									<td>21/05/2018</td>
 									<td>Added the tutorial.</td>
@@ -242,7 +239,8 @@
 						<br>
 						<br>
 						<br>
-						<p>4. That's it, your save file is now copied to your system clipboard, all you need is to paste it into the save editor
+						<p>4. That's it, your save file is now copied to your system clipboard, all you need is to paste
+							it into the save editor
 							now.</p>
 						<img src="https://i.imgur.com/vQ6PBvn.png">
 					</div>
@@ -252,4 +250,4 @@
 	</div>
 </body>
 
-</html>
+</html>f
