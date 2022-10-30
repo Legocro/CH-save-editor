@@ -1,2 +1,3 @@
-# CH-save-editor
-A save editor for Clicker Heroes
+# CH-save-editor (NEW)
+A save editor for Clicker Heroes 
+(updated for the Unity version)
